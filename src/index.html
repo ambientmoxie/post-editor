@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shuffle</title>
+  </head>
+  <body>
+    <div id="post-editor-container">
+      <!-- Post Preview area -->
+
+      <div id="post-preview-container">
+        <div id="post-preview">
+          <div id="post-content">
+            <!-- All informations -->
+
+            <div id="post-top">
+              <div id="post-cta">
+                <h3>Looking for</h3>
+              </div>
+              <h1>Experienced JAVA Developer (Spring) - M/F</h1>
+              <p>
+                We publish a SaaS platform used both in France and
+                internationally, in the field of data and web data tracking. Our
+                technical team (7 people) is looking to hire a JAVA developer.
+                Our company culture: Tech DNA, a small passionate team,
+                continuous learning, relaxed atmosphere, caring environment, and
+                collective decision-making.
+              </p>
+              <ul>
+                <li id="post__salary">
+                  <!-- <?= asset('assets/images/bill-icon.svg')->read() ?> -->
+                  <span> 40 à 50 K€ </span>
+                </li>
+                <li id="post__location">
+                  <!-- <?= asset('assets/images/pin-icon.svg')->read() ?> -->
+                  <span id="location"> Bordeaux (33) </span>
+                </li>
+                <li id="post__contract">
+                  <!-- <?= asset('assets/images/contract-icon.svg')->read() ?> -->
+                  <span id="contract"> CDI </span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer -->
+
+            <div id="post-bottom">
+              <h3>apply@rhtech.com</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post editor area -->
+
+      <div id="editor-panel">
+        <form id="post-edit-form">
+          <div id="edit-fields-container">
+            <!-- Content input -->
+
+            <div class="edit-form-section">
+              <div class="edit-field">
+                <input
+                  type="text"
+                  id="edit-title"
+                  placeholder="Intitulé du poste"
+                />
+              </div>
+              <div class="edit-field">
+                <textarea
+                  id="edit-description"
+                  placeholder="Description"
+                ></textarea>
+              </div>
+              <div class="edit-field">
+                <input type="text" id="edit-salary" placeholder="Salaire" />
+              </div>
+              <div class="edit-field">
+                <input type="text" id="edit-location" placeholder="Lieu" />
+              </div>
+              <div class="edit-field">
+                <input type="text" id="edit-contract" placeholder="Contrat" />
+              </div>
+            </div>
+
+            <!-- Line Selectors -->
+
+            <div class="edit-form-section">
+              <label>Paragraph Line Adjustment</label>
+              <div class="edit-field">
+                <button class="description-line-selector">1</button>
+                <button class="description-line-selector">2</button>
+                <button class="description-line-selector">3</button>
+                <button class="description-line-selector">4</button>
+                <button class="description-line-selector" data-selected="true">
+                  5
+                </button>
+                <button class="description-line-selector">6</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Download button -->
+
+        <button id="download-post-btn">Download</button>
+      </div>
+    </div>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
